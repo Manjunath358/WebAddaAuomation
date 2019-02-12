@@ -1,0 +1,67 @@
+2019-02-12 11:30:47,846 INFO  [Log] Starting chrome browser 
+2019-02-12 11:31:04,137 INFO  [Log] Entered Username and Password Successfully 
+2019-02-12 11:31:22,208 INFO  [Log] Logged in as Admin Successfully!! 
+2019-02-12 11:33:12,707 INFO  [Log] Starting chrome browser 
+2019-02-12 11:33:38,506 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$   addMember  $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2019-02-12 11:34:12,361 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$   CreateConversations  $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2019-02-12 11:34:42,813 INFO  [Log] Starting chrome browser 
+2019-02-12 11:35:03,869 INFO  [Log] Entered Username and Password Successfully 
+2019-02-12 11:35:20,162 INFO  [Log] Logged in as Admin Successfully!! 
+2019-02-12 11:35:23,169 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$   createNotice  $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2019-02-12 11:35:37,417 INFO  [Log] Notice created for Today 
+2019-02-12 11:35:50,982 INFO  [Log] Notice created successfully from Admin!! 
+2019-02-12 11:35:53,001 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX    createNotice-E---N---D-     XXXXXXXXXXXXXXXXXXXXXX 
+2019-02-12 11:36:03,726 INFO  [Log] Logged out from admin successfully!! 
+2019-02-12 11:36:07,820 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$   loginToResidence  $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2019-02-12 11:36:10,355 INFO  [Log] Entered Username and Password Successfully 
+2019-02-12 11:36:10,462 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX    loginToResidence-E---N---D-     XXXXXXXXXXXXXXXXXXXXXX 
+2019-02-12 11:36:10,462 INFO  [Log] User has logged in again successfully!! 
+2019-02-12 11:36:16,462 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$   verifyNotice  $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2019-02-12 11:36:22,033 INFO  [Log] Notice verified successfully from user side!! 
+2019-02-12 11:36:22,033 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX    verifyNotice-E---N---D-     XXXXXXXXXXXXXXXXXXXXXX 
+2019-02-12 11:36:22,040 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$   addMember  $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2019-02-12 11:36:37,585 INFO  [Log] Member added to the Flat successfully!! 
+2019-02-12 11:36:41,586 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX    addMember-E---N---D-     XXXXXXXXXXXXXXXXXXXXXX 
+2019-02-12 11:36:41,586 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$   addVehicle  $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2019-02-12 11:36:51,773 INFO  [Log] ×
+Success !    Vehicle Added Successfully 
+2019-02-12 11:36:55,774 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX    addVehicle-E---N---D-     XXXXXXXXXXXXXXXXXXXXXX 
+2019-02-12 11:36:55,774 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$   MakePayment Test Case Started  $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2019-02-12 11:37:09,921 INFO  [Log] There are no bills to pay!! 
+2019-02-12 11:37:09,921 INFO  [Log] makePayment Test Case end!! 
+2019-02-12 11:37:12,521 INFO  [Log] User has logged out successfully!! 
+2019-02-12 11:37:18,407 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$   loginToResidence  $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2019-02-12 11:37:20,874 INFO  [Log] Entered Username and Password Successfully 
+2019-02-12 11:37:20,959 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX    loginToResidence-E---N---D-     XXXXXXXXXXXXXXXXXXXXXX 
+2019-02-12 11:37:20,960 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$   MakePayment Test Case Started  $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2019-02-12 11:37:43,494 INFO  [Log] Paying through UPI 
+2019-02-12 11:37:45,696 INFO  [Log] UPI charges for less than 2000 is 0.0 
+2019-02-12 11:37:47,698 INFO  [Log] Convinince charge of UPI when Amount payble is less than 2000 Checked!! 
+2019-02-12 11:38:05,832 INFO  [Log] Paying through Debit Card 
+2019-02-12 11:38:08,039 INFO  [Log] Debit card charges When total amount is less than 2000 Rupees is 0.18 
+2019-02-12 11:38:10,139 INFO  [Log] Convinince charge of Debit Card when Amount payble is less than 2000 Checked 
+2019-02-12 11:38:25,746 INFO  [Log] Credit card convineince charge is 2.5% 
+2019-02-12 11:38:27,820 INFO  [Log] Convinince charge of Credit Card is Checked 
+2019-02-12 11:38:27,820 INFO  [Log] Paying through Credit Card 
+2019-02-12 11:38:42,235 INFO  [Log] Amex card convineince charge is 2.4% 
+2019-02-12 11:38:44,308 INFO  [Log] Convinince charge of Amex Card is Checked 
+2019-02-12 11:38:44,308 INFO  [Log] Paying through AMEX 
+2019-02-12 11:38:55,837 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX    makePayment-E---N---D-     XXXXXXXXXXXXXXXXXXXXXX 
+2019-02-12 11:39:00,072 INFO  [Log] User has logged out successfully!! 
+2019-02-12 11:39:03,924 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$   loginToResidence  $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2019-02-12 11:39:06,425 INFO  [Log] Entered Username and Password Successfully 
+2019-02-12 11:39:06,521 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX    loginToResidence-E---N---D-     XXXXXXXXXXXXXXXXXXXXXX 
+2019-02-12 11:39:06,521 INFO  [Log] User has logged in again successfully!! 
+2019-02-12 11:39:12,527 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$   createDirectMessage  $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2019-02-12 11:39:24,383 INFO  [Log] Message succesfully sent to the User!! 
+2019-02-12 11:39:24,383 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX    createDirectMessage-E---N---D-     XXXXXXXXXXXXXXXXXXXXXX 
+2019-02-12 11:39:35,296 INFO  [Log] User has logged out successfully!! 
+2019-02-12 11:39:44,585 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$   loginToResidence  $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2019-02-12 11:39:47,075 INFO  [Log] Entered Username and Password Successfully 
+2019-02-12 11:39:47,180 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX    loginToResidence-E---N---D-     XXXXXXXXXXXXXXXXXXXXXX 
+2019-02-12 11:39:47,180 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$   validateDirectMessage  $$$$$$$$$$$$$$$$$$$$$$$$$ 
+2019-02-12 11:40:06,133 INFO  [Log] Number of messages available are-: 10 
+2019-02-12 11:40:06,163 INFO  [Log] Message successfully delivered to User!! 
+2019-02-12 11:40:06,163 INFO  [Log] XXXXXXXXXXXXXXXXXXXXXXX    validateDirectMessage-E---N---D-     XXXXXXXXXXXXXXXXXXXXXX 
+2019-02-12 11:40:11,206 INFO  [Log] User has logged out successfully!! 
+2019-02-12 11:40:34,445 INFO  [Log] $$$$$$$$$$$$$$$$$$$$$   CreateConversations  $$$$$$$$$$$$$$$$$$$$$$$$$ 

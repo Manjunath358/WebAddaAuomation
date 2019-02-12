@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Test]">
+  <test name="Test">
+    <classes>
+      <class name="com.adda.main.MainClass"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.adda.main.MainClass">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="createConversations"/>
+          <include name="ValidateHelpdesk"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.adda.main.MainClass -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Test] -->
