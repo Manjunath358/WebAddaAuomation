@@ -117,6 +117,7 @@ public class VerifyConversations {
 
 	public void uploadPhotos() throws AWTException, InterruptedException {
 		Log.startTestCase("uploadPhotos");
+		Thread.sleep(4000);
 		myAddaTab.click();
 		Thread.sleep(2000);
 		driver.switchTo().alert().accept();

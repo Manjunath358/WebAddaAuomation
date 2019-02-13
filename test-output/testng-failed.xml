@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test verbose="2" name="Default test">
+    <classes>
+      <class name="com.adda.utility.Log"/>
+      <class name="com.adda.home.DirectMessage"/>
+      <class name="com.adda.main.MainClass"/>
+      <class name="com.adda.home.DubaiRequestDemo"/>
+      <class name="com.adda.home.MyUnit"/>
+      <class name="com.adda.home.RequestDemo"/>
+      <class name="com.adda.home.HelpDeskUser"/>
+      <class name="com.adda.home.LoginAsAdmin"/>
+      <class name="com.adda.home.CreateAndVerifyNotice"/>
+      <class name="com.adda.home.LoginAsResidence"/>
+      <class name="com.adda.home.VerifyConversations"/>
+      <class name="com.adda.home.HelpdeskAdmin"/>
+      <class name="com.adda.home.ConvienienceChargeCalculation"/>
+    </classes>
+  </test> <!-- Default test -->
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.adda.main.MainClass">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="verifyMyUnit"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.adda.main.MainClass -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

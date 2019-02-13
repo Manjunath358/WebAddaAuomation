@@ -11,8 +11,7 @@
       <class name="com.adda.main.MainClass">
         <methods>
           <include name="beforeMethod"/>
-          <include name="createConversations"/>
-          <include name="ValidateHelpdesk"/>
+          <include name="verifyMyUnit"/>
           <include name="afterMethod"/>
         </methods>
       </class> <!-- com.adda.main.MainClass -->

@@ -13,6 +13,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import com.adda.utility.Log;
 
@@ -163,10 +164,13 @@ public class MyUnit {
 	public void addVehicle() throws InterruptedException {
 		Log.startTestCase("addVehicle");
 		Timestamp timestamp = new Timestamp(System.currentTimeMillis());
+		Thread.sleep(3000);
 		myUnitTab.click();
+		Thread.sleep(2000);
 		addBtn.click();
 		Thread.sleep(3000);
 		addVehicleBtn.click();
+		Thread.sleep(3000);
 		slotNoTextBox.sendKeys("2019 " + timestamp);
 		stickerTextBox.sendKeys("OmmNamaShivay");
 		modelTextBox.sendKeys("R15Yahmha");

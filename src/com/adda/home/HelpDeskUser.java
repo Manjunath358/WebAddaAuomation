@@ -124,6 +124,7 @@ public class HelpDeskUser {
 
 	public void ValidateHelpdesk() throws InterruptedException {
 		Log.startTestCase("ValidateHelpdesk");
+		Thread.sleep(3000);
 		searchTicketTextBox.sendKeys(ticketNumber);
 		Thread.sleep(3000);
 		searchTicketResult.click();
@@ -132,3 +133,4 @@ public class HelpDeskUser {
 	}
 
 }
+
