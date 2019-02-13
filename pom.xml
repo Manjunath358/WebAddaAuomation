@@ -21,7 +21,7 @@
 				<configuration>
 					<suiteXmlFiles>
 						<!-- TestNG suite XML files -->
-						<suiteXmlFile>C:\Users\ADDA\workspace\ADDA\testng.xml</suiteXmlFile>
+						<suiteXmlFile>\\ADDA\testng.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
