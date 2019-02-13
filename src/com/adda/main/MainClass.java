@@ -47,7 +47,7 @@ public class MainClass {
 		DOMConfigurator.configure(log4jConfPath);
 		Log.info("Starting chrome browser");
 		System.setProperty("webdriver.chrome.driver",
-				"\\ADDA\\Browsers\\chromedriver.exe");
+				"C:\\Users\\ADDA\\workspace\\ADDA\\Browsers\\chromedriver.exe");
 		driver = new ChromeDriver();
 		// Log.info("Staring Firfox Browser");
 		// System.setProperty("webdriver.gecko.driver",
