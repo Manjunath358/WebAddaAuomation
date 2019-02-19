@@ -43,11 +43,15 @@ public class MainClass {
 
 	@BeforeSuite
 	public void beforeMethod() {
-		String log4jConfPath = "C:\\Users\\ADDA\\eclipse-workspace\\QAapartmentAdda\\log4j.xml";
+		String log4jConfPath = "\\Users\\ADDA\\workspace\\ADDA\\log4j.xml";
+		//String log4jConfPath = "/home/jenkins/workspace/ADDA/log4j.xml";
 		DOMConfigurator.configure(log4jConfPath);
 		Log.info("Starting chrome browser");
+		
 		System.setProperty("webdriver.chrome.driver",
-				"C:\\Users\\ADDA\\workspace\\ADDA\\Browsers\\chromedriver.exe");
+				"\\Users\\ADDA\\workspace\\ADDA\\Browsers\\chromedriver.exe");
+//		System.setProperty("webdriver.chrome.driver",
+//				"/home/jenkins/ADDA/Browsers/chromedriver.exe");
 		driver = new ChromeDriver();
 		// Log.info("Staring Firfox Browser");
 		// System.setProperty("webdriver.gecko.driver",
@@ -177,7 +181,7 @@ public class MainClass {
 		System.out.println(num);
 		LogOutAsResidence();
 	}
-
+	
 	// @Test
 	// public void dubaiAdda() throws InterruptedException {
 	// dubai = PageFactory.initElements(driver, DubaiRequestDemo.class);
@@ -186,7 +190,7 @@ public class MainClass {
 	// dubai.verifyGetStared();
 	// dubai.verifyJoinAddaFlow();C:\Users\ADDA\Pictures\Screenshots\Screenshot (1).png
 	// }
-
+	
 	//
 	//
 	@AfterSuite

@@ -1,59 +1,122 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" total="6" passed="4">
-  <reporter-output>
-  </reporter-output>
-  <suite name="Suite" duration-ms="401989" started-at="2019-02-13T11:26:07Z" finished-at="2019-02-13T11:32:49Z">
-    <groups>
-    </groups>
-    <test name="Test" duration-ms="401989" started-at="2019-02-13T11:26:07Z" finished-at="2019-02-13T11:32:49Z">
-      <class name="com.adda.main.MainClass">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.adda.main.MainClass@6debcae2]" name="beforeMethod" is-config="true" duration-ms="17165" started-at="2019-02-13T16:55:50Z" finished-at="2019-02-13T16:56:07Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="AdminCreateNotice()[pri:1, instance:com.adda.main.MainClass@6debcae2]" name="AdminCreateNotice" duration-ms="60457" started-at="2019-02-13T16:56:07Z" finished-at="2019-02-13T16:57:07Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AdminCreateNotice -->
-        <test-method status="PASS" signature="UserVerifyNotice()[pri:2, instance:com.adda.main.MainClass@6debcae2]" name="UserVerifyNotice" duration-ms="19289" started-at="2019-02-13T16:57:07Z" finished-at="2019-02-13T16:57:27Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- UserVerifyNotice -->
-        <test-method status="PASS" signature="verifyMyUnit()[pri:3, instance:com.adda.main.MainClass@6debcae2]" name="verifyMyUnit" duration-ms="155163" started-at="2019-02-13T16:57:27Z" finished-at="2019-02-13T17:00:02Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyMyUnit -->
-        <test-method status="PASS" signature="validateDirectMessage()[pri:4, instance:com.adda.main.MainClass@6debcae2]" name="validateDirectMessage" duration-ms="54483" started-at="2019-02-13T17:00:02Z" finished-at="2019-02-13T17:00:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateDirectMessage -->
-        <test-method status="FAIL" signature="ValidateHelpdesk()[pri:5, instance:com.adda.main.MainClass@6debcae2]" name="ValidateHelpdesk" duration-ms="89803" started-at="2019-02-13T17:00:56Z" finished-at="2019-02-13T17:02:26Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//li[@id='my_unit-tab']//a[@href='#']"}
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>4/2/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Feb 13 16:56:07 IST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>401 seconds (401989 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.adda.main.MainClass.ValidateHelpdesk()'><b>ValidateHelpdesk</b><br>Test class: com.adda.main.MainClass</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//li[@id=&apos;my_unit-tab&apos;]//a[@href=&apos;#&apos;]&quot;}
   (Session info: chrome=71.0.3578.98)
   (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'LAPTOP-O81FVFFS', ip: '127.0.0.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;LAPTOP-O81FVFFS&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615291 (ec3682e3c9061c..., userDataDir: C:\Users\ADDA\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:49448}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
 Session ID: 45ef8bb8114c4e9b4b8f66aba149e189
-*** Element info: {Using=xpath, value=//li[@id='my_unit-tab']//a[@href='#']}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//li[@id='my_unit-tab']//a[@href='#']"}
+*** Element info: {Using=xpath, value=//li[@id=&apos;my_unit-tab&apos;]//a[@href=&apos;#&apos;]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy7.click(Unknown Source)
+	at com.adda.home.HelpDeskUser.getUnitNumber(HelpDeskUser.java:78)
+	at com.adda.home.HelpDeskUser.createHelpDeskTicket(HelpDeskUser.java:90)
+	at com.adda.main.MainClass.ValidateHelpdesk(MainClass.java:152)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1256893889", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1256893889'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//li[@id=&apos;my_unit-tab&apos;]//a[@href=&apos;#&apos;]&quot;}
   (Session info: chrome=71.0.3578.98)
   (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'LAPTOP-O81FVFFS', ip: '127.0.0.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;LAPTOP-O81FVFFS&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615291 (ec3682e3c9061c..., userDataDir: C:\Users\ADDA\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:49448}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
 Session ID: 45ef8bb8114c4e9b4b8f66aba149e189
-*** Element info: {Using=xpath, value=//li[@id='my_unit-tab']//a[@href='#']}
+*** Element info: {Using=xpath, value=//li[@id=&apos;my_unit-tab&apos;]//a[@href=&apos;#&apos;]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -103,39 +166,51 @@ Session ID: 45ef8bb8114c4e9b4b8f66aba149e189
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ValidateHelpdesk -->
-        <test-method status="FAIL" signature="createConversations()[pri:6, instance:com.adda.main.MainClass@6debcae2]" name="createConversations" duration-ms="22738" started-at="2019-02-13T17:02:26Z" finished-at="2019-02-13T17:02:49Z">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//li[@id='my_adda-tab']//a[@href='#']//span[@class='menu-item']//span[@class='ng-binding'][contains(text(),'My ADDA')]"}
+</pre></div></td>
+<td>89</td>
+<td>com.adda.main.MainClass@6debcae2</td></tr>
+<tr>
+<td title='com.adda.main.MainClass.createConversations()'><b>createConversations</b><br>Test class: com.adda.main.MainClass</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//li[@id=&apos;my_adda-tab&apos;]//a[@href=&apos;#&apos;]//span[@class=&apos;menu-item&apos;]//span[@class=&apos;ng-binding&apos;][contains(text(),&apos;My ADDA&apos;)]&quot;}
   (Session info: chrome=71.0.3578.98)
   (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'LAPTOP-O81FVFFS', ip: '127.0.0.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;LAPTOP-O81FVFFS&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615291 (ec3682e3c9061c..., userDataDir: C:\Users\ADDA\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:49448}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
 Session ID: 45ef8bb8114c4e9b4b8f66aba149e189
-*** Element info: {Using=xpath, value=//li[@id='my_adda-tab']//a[@href='#']//span[@class='menu-item']//span[@class='ng-binding'][contains(text(),'My ADDA')]}]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//li[@id='my_adda-tab']//a[@href='#']//span[@class='menu-item']//span[@class='ng-binding'][contains(text(),'My ADDA')]"}
+*** Element info: {Using=xpath, value=//li[@id=&apos;my_adda-tab&apos;]//a[@href=&apos;#&apos;]//span[@class=&apos;menu-item&apos;]//span[@class=&apos;ng-binding&apos;][contains(text(),&apos;My ADDA&apos;)]}
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:424)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy7.click(Unknown Source)
+	at com.adda.home.VerifyConversations.CreateConversations(VerifyConversations.java:88)
+	at com.adda.main.MainClass.createConversations(MainClass.java:161)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1769227988", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1769227988'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//li[@id=&apos;my_adda-tab&apos;]//a[@href=&apos;#&apos;]//span[@class=&apos;menu-item&apos;]//span[@class=&apos;ng-binding&apos;][contains(text(),&apos;My ADDA&apos;)]&quot;}
   (Session info: chrome=71.0.3578.98)
   (Driver info: chromedriver=2.45.615291 (ec3682e3c9061c10f26ea9e5cdcf3c53f3f74387),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
 Command duration or timeout: 0 milliseconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'LAPTOP-O81FVFFS', ip: '127.0.0.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;LAPTOP-O81FVFFS&apos;, ip: &apos;127.0.0.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
 Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.45.615291 (ec3682e3c9061c..., userDataDir: C:\Users\ADDA\AppData\Local...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:49448}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 71.0.3578.98, webStorageEnabled: true}
 Session ID: 45ef8bb8114c4e9b4b8f66aba149e189
-*** Element info: {Using=xpath, value=//li[@id='my_adda-tab']//a[@href='#']//span[@class='menu-item']//span[@class='ng-binding'][contains(text(),'My ADDA')]}
+*** Element info: {Using=xpath, value=//li[@id=&apos;my_adda-tab&apos;]//a[@href=&apos;#&apos;]//span[@class=&apos;menu-item&apos;]//span[@class=&apos;ng-binding&apos;][contains(text(),&apos;My ADDA&apos;)]}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
@@ -184,17 +259,37 @@ Session ID: 45ef8bb8114c4e9b4b8f66aba149e189
 	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:203)
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createConversations -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.adda.main.MainClass@6debcae2]" name="afterMethod" is-config="true" duration-ms="1531" started-at="2019-02-13T17:02:49Z" finished-at="2019-02-13T17:02:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- com.adda.main.MainClass -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
-</testng-results>
+</pre></div></td>
+<td>22</td>
+<td>com.adda.main.MainClass@6debcae2</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.adda.main.MainClass.AdminCreateNotice()'><b>AdminCreateNotice</b><br>Test class: com.adda.main.MainClass</td>
+<td></td>
+<td>60</td>
+<td>com.adda.main.MainClass@6debcae2</td></tr>
+<tr>
+<td title='com.adda.main.MainClass.UserVerifyNotice()'><b>UserVerifyNotice</b><br>Test class: com.adda.main.MainClass</td>
+<td></td>
+<td>19</td>
+<td>com.adda.main.MainClass@6debcae2</td></tr>
+<tr>
+<td title='com.adda.main.MainClass.validateDirectMessage()'><b>validateDirectMessage</b><br>Test class: com.adda.main.MainClass</td>
+<td></td>
+<td>54</td>
+<td>com.adda.main.MainClass@6debcae2</td></tr>
+<tr>
+<td title='com.adda.main.MainClass.verifyMyUnit()'><b>verifyMyUnit</b><br>Test class: com.adda.main.MainClass</td>
+<td></td>
+<td>155</td>
+<td>com.adda.main.MainClass@6debcae2</td></tr>
+</table><p>
+</body>
+</html>
