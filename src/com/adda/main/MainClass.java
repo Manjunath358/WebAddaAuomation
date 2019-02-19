@@ -51,7 +51,7 @@ public class MainClass {
 //		System.setProperty("webdriver.chrome.driver",
 //				"\\Users\\ADDA\\workspace\\ADDA\\Browsers\\chromedriver.exe");
 		System.setProperty("webdriver.chrome.driver",
-				"/home/jenkins/ADDA/Browsers/chromedriverLinux");
+				"/home/jenkins/ADDA/Browsers/chromedriverLinux/chromedriver");
 		driver = new ChromeDriver();
 		// Log.info("Staring Firfox Browser");
 		// System.setProperty("webdriver.gecko.driver",
