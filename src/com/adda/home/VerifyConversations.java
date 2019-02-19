@@ -129,10 +129,10 @@ public class VerifyConversations {
 		Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
 		// Set the String to Enter
 
-		StringSelection stringSelection = new StringSelection(
-				"\\Users\\ADDA\\Pictures\\Screenshots\\Screenshot (1).png");
 //		StringSelection stringSelection = new StringSelection(
-//				"\/home/jenkins/ADDA/Pictures/Screenshot (1).png");
+//				"\\Users\\ADDA\\Pictures\\Screenshots\\Screenshot (1).png");
+		StringSelection stringSelection = new StringSelection(
+				"/home/jenkins/ADDA/Pictures/Screenshot (1).png");
 		
 		// Copy the String to Clipboard
 

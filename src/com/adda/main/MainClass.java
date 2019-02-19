@@ -43,15 +43,15 @@ public class MainClass {
 
 	@BeforeSuite
 	public void beforeMethod() {
-		String log4jConfPath = "\\Users\\ADDA\\workspace\\ADDA\\log4j.xml";
-		//String log4jConfPath = "/home/jenkins/workspace/ADDA/log4j.xml";
+//		String log4jConfPath = "\\Users\\ADDA\\workspace\\ADDA\\log4j.xml";
+		String log4jConfPath = "/home/jenkins/ADDA/log4j.xml";
 		DOMConfigurator.configure(log4jConfPath);
 		Log.info("Starting chrome browser");
 		
-		System.setProperty("webdriver.chrome.driver",
-				"\\Users\\ADDA\\workspace\\ADDA\\Browsers\\chromedriver.exe");
 //		System.setProperty("webdriver.chrome.driver",
-//				"/home/jenkins/ADDA/Browsers/chromedriverLinux");
+//				"\\Users\\ADDA\\workspace\\ADDA\\Browsers\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver",
+				"/home/jenkins/ADDA/Browsers/chromedriverLinux");
 		driver = new ChromeDriver();
 		// Log.info("Staring Firfox Browser");
 		// System.setProperty("webdriver.gecko.driver",
