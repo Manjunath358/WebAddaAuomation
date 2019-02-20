@@ -54,7 +54,7 @@ public class MainClass {
 //		System.setProperty("webdriver.chrome.driver",
 //				"\\Users\\ADDA\\workspace\\ADDA\\Browsers\\chromedriver.exe");
 		System.setProperty("webdriver.chrome.driver",
-				"/usr/bin/chromedriver");
+				"/home/jenkins/ADDA/Browsers/chromedriverLinux/chromedriver");
 //		ChromeOptions ChromeOptions = new ChromeOptions();
 //	    ChromeOptions.addArguments("--headless","window-size=1024,768", "--no-sandbox");
 	    driver = new ChromeDriver();
