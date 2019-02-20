@@ -4,13 +4,16 @@ import java.awt.AWTException;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.util.concurrent.TimeUnit;
+
 import org.apache.log4j.xml.DOMConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
+
 import com.adda.home.DubaiRequestDemo;
 import com.adda.home.HelpDeskUser;
 import com.adda.home.HelpdeskAdmin;
@@ -52,7 +55,10 @@ public class MainClass {
 //				"\\Users\\ADDA\\workspace\\ADDA\\Browsers\\chromedriver.exe");
 		System.setProperty("webdriver.chrome.driver",
 				"/usr/bin/chromedriver");
-		driver = new ChromeDriver();
+		ChromeOptions ChromeOptions = new ChromeOptions();
+	      ChromeOptions.addArguments("--headless", "window-size=1024,768", "--no-sandbox");
+	      driver = new ChromeDriver(ChromeOptions);
+		
 		// Log.info("Staring Firfox Browser");
 		// System.setProperty("webdriver.gecko.driver",
 		// "D:\\geckodriver-v0.21.0-win32\\geckodriver.exe");
