@@ -1,41 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="6" passed="6">
+<testng-results skipped="6" failed="0" total="6" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="397827" started-at="2019-02-18T07:22:16Z" finished-at="2019-02-18T07:28:54Z">
+  <suite name="Default suite" duration-ms="395" started-at="2019-02-20T09:12:51Z" finished-at="2019-02-20T09:12:51Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="397827" started-at="2019-02-18T07:22:16Z" finished-at="2019-02-18T07:28:54Z">
+    <test name="Default test" duration-ms="395" started-at="2019-02-20T09:12:51Z" finished-at="2019-02-20T09:12:51Z">
       <class name="com.adda.main.MainClass">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.adda.main.MainClass@1593948d]" name="beforeMethod" is-config="true" duration-ms="10064" started-at="2019-02-18T12:52:06Z" finished-at="2019-02-18T12:52:16Z">
+        <test-method status="FAIL" signature="beforeMethod()[pri:0, instance:com.adda.main.MainClass@1593948d]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-02-20T14:42:50Z" finished-at="2019-02-20T14:42:50Z">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[The driver executable does not exist: C:\usr\bin\chromedriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\usr\bin\chromedriver
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:137)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:132)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:156)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:346)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:91)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:157)
+	at com.adda.main.MainClass.beforeMethod(MainClass.java:60)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="AdminCreateNotice()[pri:1, instance:com.adda.main.MainClass@1593948d]" name="AdminCreateNotice" duration-ms="51855" started-at="2019-02-18T12:52:16Z" finished-at="2019-02-18T12:53:08Z">
+        <test-method status="SKIP" signature="AdminCreateNotice()[pri:1, instance:com.adda.main.MainClass@1593948d]" name="AdminCreateNotice" duration-ms="2" started-at="2019-02-20T14:42:51Z" finished-at="2019-02-20T14:42:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AdminCreateNotice -->
-        <test-method status="PASS" signature="UserVerifyNotice()[pri:2, instance:com.adda.main.MainClass@1593948d]" name="UserVerifyNotice" duration-ms="17996" started-at="2019-02-18T12:53:08Z" finished-at="2019-02-18T12:53:26Z">
+        <test-method status="SKIP" signature="UserVerifyNotice()[pri:2, instance:com.adda.main.MainClass@1593948d]" name="UserVerifyNotice" duration-ms="0" started-at="2019-02-20T14:42:51Z" finished-at="2019-02-20T14:42:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UserVerifyNotice -->
-        <test-method status="PASS" signature="verifyMyUnit()[pri:3, instance:com.adda.main.MainClass@1593948d]" name="verifyMyUnit" duration-ms="145356" started-at="2019-02-18T12:53:26Z" finished-at="2019-02-18T12:55:51Z">
+        <test-method status="SKIP" signature="verifyMyUnit()[pri:3, instance:com.adda.main.MainClass@1593948d]" name="verifyMyUnit" duration-ms="6" started-at="2019-02-20T14:42:51Z" finished-at="2019-02-20T14:42:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyMyUnit -->
-        <test-method status="PASS" signature="validateDirectMessage()[pri:4, instance:com.adda.main.MainClass@1593948d]" name="validateDirectMessage" duration-ms="50328" started-at="2019-02-18T12:55:51Z" finished-at="2019-02-18T12:56:41Z">
+        <test-method status="SKIP" signature="validateDirectMessage()[pri:4, instance:com.adda.main.MainClass@1593948d]" name="validateDirectMessage" duration-ms="1" started-at="2019-02-20T14:42:51Z" finished-at="2019-02-20T14:42:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateDirectMessage -->
-        <test-method status="PASS" signature="ValidateHelpdesk()[pri:5, instance:com.adda.main.MainClass@1593948d]" name="ValidateHelpdesk" duration-ms="72840" started-at="2019-02-18T12:56:41Z" finished-at="2019-02-18T12:57:54Z">
+        <test-method status="SKIP" signature="ValidateHelpdesk()[pri:5, instance:com.adda.main.MainClass@1593948d]" name="ValidateHelpdesk" duration-ms="1" started-at="2019-02-20T14:42:51Z" finished-at="2019-02-20T14:42:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidateHelpdesk -->
-        <test-method status="PASS" signature="createConversations()[pri:6, instance:com.adda.main.MainClass@1593948d]" name="createConversations" duration-ms="59403" started-at="2019-02-18T12:57:54Z" finished-at="2019-02-18T12:58:54Z">
+        <test-method status="SKIP" signature="createConversations()[pri:6, instance:com.adda.main.MainClass@1593948d]" name="createConversations" duration-ms="2" started-at="2019-02-20T14:42:51Z" finished-at="2019-02-20T14:42:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createConversations -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.adda.main.MainClass@1593948d]" name="afterMethod" is-config="true" duration-ms="1251" started-at="2019-02-18T12:58:55Z" finished-at="2019-02-18T12:58:56Z">
+        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:com.adda.main.MainClass@1593948d]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-02-20T14:42:52Z" finished-at="2019-02-20T14:42:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->

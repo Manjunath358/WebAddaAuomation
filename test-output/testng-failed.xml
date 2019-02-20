@@ -6,4 +6,19 @@
       <class name="com.adda.main.MainClass"/>
     </classes>
   </test> <!-- Default test -->
+  <test name="Default test(failed)">
+    <classes>
+      <class name="com.adda.main.MainClass">
+        <methods>
+          <include name="AdminCreateNotice"/>
+          <include name="beforeMethod"/>
+          <include name="createConversations"/>
+          <include name="ValidateHelpdesk"/>
+          <include name="UserVerifyNotice"/>
+          <include name="validateDirectMessage"/>
+          <include name="verifyMyUnit"/>
+        </methods>
+      </class> <!-- com.adda.main.MainClass -->
+    </classes>
+  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
