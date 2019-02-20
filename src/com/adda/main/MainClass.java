@@ -55,9 +55,9 @@ public class MainClass {
 //				"\\Users\\ADDA\\workspace\\ADDA\\Browsers\\chromedriver.exe");
 		System.setProperty("webdriver.chrome.driver",
 				"/usr/bin/chromedriver");
-//		ChromeOptions ChromeOptions = new ChromeOptions();
-//	    ChromeOptions.addArguments("--headless","window-size=1024,768", "--no-sandbox");
-	    driver = new ChromeDriver();
+		ChromeOptions ChromeOptions = new ChromeOptions();
+	    ChromeOptions.addArguments("--headless","window-size=1024,768", "--no-sandbox");
+	    driver = new ChromeDriver(ChromeOptions);
 		
 		// Log.info("Staring Firfox Browser");
 		// System.setProperty("webdriver.gecko.driver",
@@ -66,11 +66,11 @@ public class MainClass {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		driver.get(addaIOurl);
+		System.out.println("URL Launched!!");
 	}
 
 	public void logInToResidence() throws InterruptedException, AWTException {
 		driver.navigate().to(addaIOurl);
-		System.out.println("URL Launched!!");
 		home = PageFactory.initElements(driver, LoginAsResidence.class);
 		home.loginToResidence("mynewadda.15@gmail.com", "adda1234");
 		Log.info("User has logged in successfully!!");
