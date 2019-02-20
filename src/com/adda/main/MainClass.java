@@ -55,9 +55,9 @@ public class MainClass {
 //				"\\Users\\ADDA\\workspace\\ADDA\\Browsers\\chromedriver.exe");
 		System.setProperty("webdriver.chrome.driver",
 				"/usr/bin/chromedriver");
-		ChromeOptions ChromeOptions = new ChromeOptions();
-	    ChromeOptions.addArguments("window-size=1024,768", "--no-sandbox");
-	    driver = new ChromeDriver(ChromeOptions);
+//		ChromeOptions ChromeOptions = new ChromeOptions();
+//	    ChromeOptions.addArguments("--headless","window-size=1024,768", "--no-sandbox");
+	    driver = new ChromeDriver();
 		
 		// Log.info("Staring Firfox Browser");
 		// System.setProperty("webdriver.gecko.driver",
