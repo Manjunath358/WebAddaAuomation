@@ -70,6 +70,7 @@ public class MainClass {
 
 	public void logInToResidence() throws InterruptedException, AWTException {
 		driver.navigate().to(addaIOurl);
+		System.out.println("URL Launched!!");
 		home = PageFactory.initElements(driver, LoginAsResidence.class);
 		home.loginToResidence("mynewadda.15@gmail.com", "adda1234");
 		Log.info("User has logged in successfully!!");
